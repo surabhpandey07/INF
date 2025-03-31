@@ -3020,7 +3020,7 @@ input, textarea {
 .company-logo-single-item {
   text-align: center;
   position: relative;
-  line-height: 230px;
+  line-height: 200px;
 }
 .company-logo-single-item::after {
   position: absolute;
@@ -3038,7 +3038,7 @@ input, textarea {
   transition: all 0.5s ease;
 }
 .company-logo-single-item .image {
-  width: 220px;
+  width: 200px;
   display: inline-block;
 }
 .company-logo-single-item .image img {
@@ -3048,11 +3048,11 @@ input, textarea {
 .company-logo-single-item:hover::after {
   visibility: visible;
   opacity: 1;
-  width: 240px;
+  width: 200px;
 }
 
 .company-logo-border {
-  border-bottom: 2px solid #f4f4f4;
+  border-bottom: 2px solid #000000;
 }
 
 /***************************************

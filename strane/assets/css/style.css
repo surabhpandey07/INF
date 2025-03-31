@@ -2032,8 +2032,8 @@ input, textarea {
   font-size: 22px;
   font-weight: 700;
   padding: 7.5px 20px;
-  border: 1px dashed #c3c4c7;
-  color: #5e59f1;
+  border: 1px dashed #ffffff;
+  color: #fafafa;
   position: relative;
 }
 .hero-wrapper .hero-content .title-tag::after {

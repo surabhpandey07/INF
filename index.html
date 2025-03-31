@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Strane - Startup Agency Bootstrap 5 Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ::::::::::::::Favicon icon::::::::::::::-->
+    <link rel="shortcut icon" href="/straneassets/images/favicon.ico" type="image/png">
+
+    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/strane/assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/strane/assets/css/vendor/icofont.min.css" />
+    <link rel="stylesheet" href="/strane/assets/css/vendor/jquery-ui.min.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/strane/assets/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="/strane/assets/css/plugins/swiper-bundle.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/strane/assets/css/style.css">
+
+</head>
+
+<body>
+
+    <main class="main-wrapper">
+        <!-- .....:::::: Start Header Section :::::.... -->
+        <header class="header-section sticky-header d-none d-lg-block section-fluid-200">
+            <div class="header-wrapper">
+                <div class="container-fluid">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <!-- Start Header Logo -->
+                            <a href="index.html" class="header-logo">
+                                <img src="/strane/assets/images/logo/logo.png" alt="">
+                            </a>
+                            <!-- End Header Logo -->
+                        </div>
+                        <div class="col-auto d-flex align-items-center">
+                            <!-- Start Header Menu -->
+                            <ul class="header-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="has-dropdown">
+                                    <a href="service-list.html">Service</a>
+                                    <ul class="submenu">
+                                        <li><a href="service-list.html">Services</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="portfolio-list.html">Project</a>
+                                    <ul class="submenu">
+                                        <li><a href="portfolio-list.html">Project</a></li>
+                                        <li><a href="portfolio-details.html">Project Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="index.html">Pages</a>
+                                    <ul class="submenu">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="404-error.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="blog-list-left-sidebar.html">Blogs</a>
+                                    <ul class="submenu">
+                                        <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                        <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                                        <li><a href="blog-list-full-width.html">Blog List Full Width</a></li>
+                                        <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
+                                        <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
+                                        <li><a href="blog-details-full-width.html">Blog Details Full Width</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <!-- End Header Menu -->
+                        </div>
+                        <div class="col-auto">
+                            <div class="header-btn-link">
+                                <a href="contact.html" class="btn btn-lg btn-default">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- .....:::::: End Header Section :::::.... -->
+
+        <!-- .....:::::: Start Mobile Header Section :::::.... -->
+        <div class="mobile-header d-block d-lg-none">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <div class="mobile-logo">
+                            <a href="index.html"><img src="/strane/assets/images/logo/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="mobile-action-link text-end">
+                            <a data-bs-toggle="offcanvas" href="#toggleMenu" role="button"><i class="icofont-navigation-menu"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .....:::::: Start MobileHeader Section :::::.... -->
+
+        <!--  .....::::: Start Offcanvas Mobile Menu Section :::::.... -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleMenu">
+            <div class="offcanvas-header">
+                <!-- Start Header Logo -->
+                <a href="index.html" class="header-logo"><img src="/strane/assets/images/logo/logo.png" alt=""></a>
+                <!-- End Header Logo -->
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Start Offcanvas Mobile Menu Wrapper -->
+                <div class="offcanvas-mobile-menu-wrapper">
+                    <!-- Start Mobile Menu  -->
+                    <div class="mobile-menu-bottom">
+                        <!-- Start Mobile Menu Nav -->
+                        <div class="offcanvas-menu">
+                            <ul>
+                                <li><a href="index.html"><span>Home</span></a></li>
+                                <li>
+                                    <a href="#"><span>Services</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="service-list.html">Service List</a></li>
+                                        <li><a href="service-details.html">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Portfolio</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="portfolio-list.html">Portfolio</a></li>
+                                        <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Pages</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="about.html"><span>About Us</span></a></li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="404-error.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Blogs</span></a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
+                                        <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
+                                        <li><a href="blog-list-full-width.html">Blog List Full Width</a></li>
+                                        <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
+                                        <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
+                                        <li><a href="blog-details-full-width.html">Blog Details Full Width</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html"><span>Contact</span></a>
+                                </li>
+                            </ul>
+                        </div> <!-- End Mobile Menu Nav -->
+                    </div> <!-- End Mobile Menu -->
+
+                    <!-- Start Mobile contact Info -->
+                    <div class="mobile-contact-info text-center">
+                        <ul class="social-link">
+                            <li><a href="https://example.com"><i class="icofont-facebook"></i></a>
+                            </li>
+                            <li><a href="https://example.com"><i class="icofont-twitter"></i></a>
+                            </li>
+                            <li><a href="https://example.com"><i class="icofont-skype"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Mobile contact Info -->
+
+                </div> <!-- End Offcanvas Mobile Menu Wrapper -->
+            </div>
+        </div>
+        <!-- ...:::: End Offcanvas Mobile Menu Section:::... -->
+
+        <!-- Offcanvas Overlay -->
+        <div class="offcanvas-overlay"></div>
+        <!-- ...::: Start Hero Display Section :::... -->
+        <div class="hero-display-section section-fluid-200">
+            <div class="box-wrappr">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                       
+                        <h2 class="title">Buildingn <span>Careers.<br>
+                            Building Organation.</span>.</h2>
+                            <h4>InfAI Systems is one of the India's leading start-ups
+                                proudly shaping the future of International and Indian businesses </h4>
+                        <p></p>
+                        <a href="service-list.html" class="btn btn-lg btn-default icon-right">Get in Touch <i class="icofont-double-right"></i></a>
+                    </div>
+                    <div class="hero-image">
+                        <img class="img-fluid" src="/strane/assets/images/background/Carousel Box.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Hero Display Section :::... -->
+
+        <!-- ...::: Start Count Display Section :::... -->
+        <div class="count-display section-fluid-200 section-top-gap-150 section-inner-padding-100 section-inner-gray-gradient-bg-reverse">
+            <div class="box-wrapper">
+                <div class="count-wrapper pos-relative">
+                    <div class="container-fluid">
+                        <div class="row align-items-center justify-contents-between">
+                            <div class="col-xl-5 offset-xl-0 col-md-10 offset-md-1 col-sm-12">
+                                <div class="content text-lg-start text-center">
+                                    <h3 class="title">Put, <span>Infai</span>  to work for<span> your business and expect</span> the
+                                        unexpected.</h3>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <ul class="counter-items counter-items-style-1">
+                                    <!-- Start Counter Single Items  -->
+                                    <li class="counter-single-item">
+                                        <div class="count-box">
+                                            <style>
+                                                .rotate-image {
+                                                  width: 150px; /* Adjust size as needed */
+                                                  height: auto;
+                                                  animation: rotate 5s linear infinite; /* Rotates continuously */
+                                                }
+                                              
+                                                @keyframes rotate {
+                                                  from {
+                                                    transform: rotate(0deg);
+                                                  }
+                                                  to {
+                                                    transform: rotate(360deg);
+                                                  }
+                                                }
+                                              </style>
+                                              
+                                              <img src="/strane/assets/images/icons/count-shape-blue - Copy (2).png" class="rotate-image" alt="Rotating Image">
+                                              
+
+
+                                            <p class="text"><span class="counter"  data-to="100" data-speed="1500">4</span>X</p>
+                                        </div>
+                                        <h6 class="title">Savings in your<br>
+                                            operation cost</h6>
+                                    </li>
+                                    <!-- End Counter Single Items  -->
+                                    <!-- Start Counter Single Items  -->
+                                    <li class="counter-single-item">
+                                        <div class="count-box">
+                                            <style>
+                                                .rotate-image {
+                                                  width: 150px; /* Adjust size as needed */
+                                                  height: auto;
+                                                  animation: rotate 5s linear infinite; /* Rotates continuously */
+                                                }
+                                              
+                                                @keyframes rotate {
+                                                  from {
+                                                    transform: rotate(0deg);
+                                                  }
+                                                  to {
+                                                    transform: rotate(360deg);
+                                                  }
+                                                }
+                                              </style>
+                                              
+                                              <img src="/strane/assets/images/icons/count-shape-purple.png" class="rotate-image" alt="Rotating Image">
+                                              
+                                            
+                                            
+                                            <p class="text"><span class="counter">3</span>X</p>
+                                        </div>
+                                        <h6 class="title">Efficiency in<BR> delivering outputs</h6>
+                                    </li>
+                                    <!-- End Counter Single Items  -->
+                                    <!-- Start Counter Single Items  -->
+                                    
+                                    <!-- End Counter Single Items  -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dotline-animate">
+                        <span class="blue"></span>
+                        <span class="orange"></span>
+                        <span class="blue"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ...::: End Count Display Section :::... -->
+        <h1 style="text-align: center;">Why Choose InfAI </h1>
+        <style>
+            h1 {
+              text-align: center;
+              color: rgb(0, 0, 0);
+              margin-top: 100px;
+              font-weight: bold;
+              font-size: 2.5rem; /* Default size */
+              margin-bottom: 50px; /* Space below */
+              margin-left: 20px; /* Adds left spacing */
+            }
+          
+            @media (max-width: 768px) {
+              h1 {
+                font-size: 2rem; /* Adjust for tablets */
+                margin-bottom: 15px;
+                margin-left: 15px;
+              }
+            }
+          
+            @media (max-width: 480px) {
+              h1 {
+                font-size: 1.5rem; /* Adjust for mobile */
+                margin-bottom: 10px;
+                margin-left: 10px;
+              }
+            }
+          </style>
+        <!-- ...::: Start Promo Display Section :::... -->
+        <div class="promo-display-section section-inner-padding-150 section-inner-bg-theme-color-gradeint-noise">
+            <div class="box-wrapper">
+                
+                <div class="promo-wrapper">
+                    <div class="container">
+                        <div class="row">
+                      
+                            <div class="col-12">
+                                <!-- Start Promo Items -->
+                                <div class="promo-items">
+                                    <!-- Start Promo Single Items -->
+                                    <div class="promo-single-items">
+                                        <div class="icon">
+                                            <img src="/strane/assets/images/icons/promo/lightbulb.png" alt="">
+                                            <img src="/strane/assets/images/icons/promo/lightbulb-gradient.png" alt="">
+
+                                            <div class="dot-icon-hover">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Beyond
+                                                Consulting</h4>
+                                            <p>We're not traditional consultants who leave after providing advice. We integrate deeply with your team, becoming a permanent extension of your business.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End Promo Single Items -->
+                                    <!-- Start Promo Single Items -->
+                                    <div class="promo-single-items">
+                                        <div class="icon">
+                                            <img src="/strane/assets/images/icons/promo/cyber-security.png" alt="">
+                                            <img src="/strane/assets/images/icons/promo/cyber-security-gradient.png" alt="">
+
+                                            <div class="dot-icon-hover">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Operate Forever
+                                                Model</h4>
+                                            <p>Unlike Build-Operate-Transfer models, we commit to long-term partnerships, growing and evolving with your business needs.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End Promo Single Items -->
+                                    <!-- Start Promo Single Items -->
+                                    <div class="promo-single-items">
+                                        <div class="icon">
+                                            <img src="/strane/assets/images/icons/promo/skills.png" alt="">
+                                            <img src="/strane/assets/images/icons/promo/skills-gradient.png" alt="">
+
+                                            <div class="dot-icon-hover">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Cost-Effective Excellence</h4>
+                                            <p>Get high-quality team extension at optimized costs, helping you unlock better profit margins while maintaining premium quality.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End Promo Single Items -->
+                                    <!-- Start Promo Single Items -->
+                                    </div>
+                                    <!-- End Promo Single Items -->
+                                </div>
+                                <!-- End Promo Items -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Promo Display Section :::... -->
+
+        <!-- ...::: Start Service Display Section :::... -->
+        <div class="service-dispaly-section section-inner-padding-150 service-dispaly-bg">
+            <div class="box-wrapper">
+                <div class="section-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 offset-xl-3">
+                                <div class="section-content section-content-gap-80 text-center">
+                                    <h6 class="section-tag tag-orange">Our Services</h6>
+                                    <h3 class="section-title">Provide awesome service for our customer</h3>
+                                    <span class="icon-seperator"><img
+											src="/strane/assets/images/icons/section-seperator-shape.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Start Service Slider -->
+                                <div class="service-slider default-slider">
+                                    <!-- Slider main container -->
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <!-- Start Service Single Items -->
+                                            <div class="service-single-item service-single-item-style-1 swiper-slide">
+                                                <div class="icon">
+                                                    <img src="/strane/assets/images/icons/service/service-1.png" alt="">
+                                                    <img src="/strane/assets/images/icons/service/service-1-hover.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="title"><a href="service-details.html">Web Development</a>
+                                                    </h5>
+                                                    <p>There are many variations of passages available have versions
+                                                        suffered alteration.</p>
+                                                    <a class="text-btn" href="service-details.html">View Details
+                                                        <span class="arrow-icon">
+															<img src="/strane/assets/images/icons/right-arrow-blue.png" alt="">
+															<img src="/strane/assets/images/icons/right-arrow-white.png" alt="">
+														</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- End Service Single Items -->
+                                            <!-- Start Service Single Items -->
+                                            <div class="service-single-item service-single-item-style-1 swiper-slide">
+                                                <div class="icon">
+                                                    <img src="/strane/assets/images/icons/service/service-2.png" alt="">
+                                                    <img src="/strane/assets/images/icons/service/service-2-hover.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="title"><a href="service-details.html">Market Research</a>
+                                                    </h5>
+                                                    <p>There are many variations of passages available have versions
+                                                        suffered alteration.</p>
+                                                    <a class="text-btn" href="service-details.html">View Details
+                                                        <span class="arrow-icon">
+															<img src="/strane/assets/images/icons/right-arrow-blue.png" alt="">
+															<img src="/strane/assets/images/icons/right-arrow-white.png" alt="">
+														</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- End Service Single Items -->
+                                            <!-- Start Service Single Items -->
+                                            <div class="service-single-item service-single-item-style-1 swiper-slide">
+                                                <div class="icon">
+                                                    <img src="/strane/assets/images/icons/service/service-1.png" alt="">
+                                                    <img src="/strane/assets/images/icons/service/service-1-hover.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="title"><a href="service-details.html">Creative
+                                                            Solutions</a></h5>
+                                                    <p>There are many variations of passages available have versions
+                                                        suffered alteration.</p>
+                                                    <a class="text-btn" href="service-details.html">View Details
+                                                        <span class="arrow-icon">
+															<img src="/strane/assets/images/icons/right-arrow-blue.png" alt="">
+															<img src="/strane/assets/images/icons/right-arrow-white.png" alt="">
+														</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- End Service Single Items -->
+                                            <!-- Start Service Single Items -->
+                                            <div class="service-single-item service-single-item-style-1 swiper-slide">
+                                                <div class="icon">
+                                                    <img src="/strane/assets/images/icons/service/service-1.png" alt="">
+                                                    <img src="/strane/assets/images/icons/service/service-1-hover.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="title"><a href="service-details.html">Web Development</a>
+                                                    </h5>
+                                                    <p>There are many variations of passages available have versions
+                                                        suffered alteration.</p>
+                                                    <a class="text-btn" href="service-details.html">View Details
+                                                        <span class="arrow-icon">
+															<img src="/strane/assets/images/icons/right-arrow-blue.png" alt="">
+															<img src="/strane/assets/images/icons/right-arrow-white.png" alt="">
+														</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- End Service Single Items -->
+                                            <!-- Start Service Single Items -->
+                                            <div class="service-single-item service-single-item-style-1 swiper-slide">
+                                                <div class="icon">
+                                                    <img src="/strane/assets/images/icons/service/service-2.png" alt="">
+                                                    <img src="/strane/assets/images/icons/service/service-2-hover.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="title"><a href="service-details.html">Market Research</a>
+                                                    </h5>
+                                                    <p>There are many variations of passages available have versions
+                                                        suffered alteration.</p>
+                                                    <a class="text-btn" href="service-details.html">View Details
+                                                        <span class="arrow-icon">
+															<img src="/strane/assets/images/icons/right-arrow-blue.png" alt="">
+															<img src="/strane/assets/images/icons/right-arrow-white.png" alt="">
+														</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- End Service Single Items -->
+                                            <!-- Start Service Single Items -->
+                                            <div class="service-single-item service-single-item-style-1 swiper-slide">
+                                                <div class="icon">
+                                                    <img src="/strane/assets/images/icons/service/service-1.png" alt="">
+                                                    <img src="/strane/assets/images/icons/service/service-1-hover.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="title"><a href="service-details.html">Creative
+                                                            Solutions</a></h5>
+                                                    <p>There are many variations of passages available have versions
+                                                        suffered alteration.</p>
+                                                    <a class="text-btn" href="service-details.html">View Details
+                                                        <span class="arrow-icon">
+															<img src="/strane/assets/images/icons/right-arrow-blue.png" alt="">
+															<img src="/strane/assets/images/icons/right-arrow-white.png" alt="">
+														</span></a>
+                                                </div>
+                                            </div>
+                                            <!-- End Service Single Items -->
+                                        </div>
+                                    </div>
+                                    <!-- Navigation buttons -->
+                                    <div class="default-slider-buttons">
+                                        <div class="slider-button button-prev"><i class="icofont-long-arrow-left"></i></div>
+                                        <div class="slider-button button-next"><i class="icofont-long-arrow-right"></i></div>
+                                    </div>
+                                </div>
+                                <!-- End Service Slider -->
+                                <div class="d-flex justify-content-center">
+                                    <a href="service-list.html" class="btn btn-lg btn-default-outline btn-section-bottom">Other’s Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Service Display Section :::... -->
+
+        <!-- ...::: Start Content Display Section :::... -->
+        <div class="content-display-section section-top-gap-150">
+            <div class="box-wrapper custom-box-wrapper pos-relative">
+                <div class="content-inner-img content-inner-img-left">
+                    <img class="img-fluid" src="/strane/assets/images/logo/INFIA IMAGE 2.png" alt="">
+                </div>
+                <div class="section-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pos-relative">
+                                <div class="custom-section-content custom-section-content-right">
+                                    <div class="section-content section-content-gap-50">
+                                        <h6 class="section-tag tag-blue">Why Choose Us</h6>
+                                        <h3 class="section-title">Increase business profit with strane agency.</h3>
+                                    </div>
+                                    <p>There are many variations passages available
+                                        sheets but majority have versions have years suffereds
+                                        alteration some form humour.</p>
+
+                                    <ul class="content-lists">
+                                        <li><i class="icofont-check"></i> Secure & private</li>
+                                        <li><i class="icofont-check"></i> Right Solution</li>
+                                        <li><i class="icofont-check"></i> Highly Skills</li>
+                                        <li><i class="icofont-check"></i> Client’s Support</li>
+                                    </ul>
+
+                                    <a href="contact.html" class="btn btn-lg btn-default icon-right">Get Started <i
+											class="icofont-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Content Display Section :::... -->
+
+        <!-- ...::: Start Content Display Section :::... -->
+        <div class="content-display-section  section-top-gap-150 section-fluid-200">
+            <div class="box-wrapper custom-box-wrapper pos-relative">
+                <div class="content-inner-img content-inner-img-right">
+                    <img class="img-fluid" src="/strane/assets/images/logo/INFIA IMAGE 3.png" alt="">
+                </div>
+                <div class="section-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pos-relative">
+                                <div class="custom-section-content custom-section-content-left">
+                                    <div class="section-content section-content-gap-50 ">
+                                        <h6 class="section-tag tag-orange">Client’s Support</h6>
+                                        <h3 class="section-title">High Performance Teams,<br>
+                                            Built for Scale</h3>
+                                    </div>
+                                    <p>With deep operational integration, <br>we build &  manage high-performance teams <br>that drive business success.</p>
+                                   
+
+                                    <a href="contact.html" class="btn btn-lg btn-default icon-right">Transform Your Team <i
+											class="icofont-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Content Display Section :::... -->
+
+        
+        <!-- ...::: Start Company Logo Display Section :::... -->
+        <div class="company-logo-display-section section-fluid-135 company-logo-border">
+            <div class="box-wrapper">
+                
+                <h1 style="text-align: center;">Our Client’s </h1>
+                <style>
+                    h1 {
+                      text-align: center;
+                      color: rgb(0, 0, 0);
+                      top: 20px;
+                      font-size: 3.5rem; /* Default size */
+                      margin-bottom: 10px; /* Space below */
+                      margin-left: 20px; /* Adds left spacing */
+                    }
+                  
+                    @media (max-width: 768px) {
+                      h1 {
+                        font-size: 2rem; /* Adjust for tablets */
+                        margin-bottom: 5px;
+                        margin-left: 15px;
+                      }
+                    }
+                  
+                    @media (max-width: 480px) {
+                      h1 {
+                        font-size: 1.5rem; /* Adjust for mobile */
+                        margin-bottom: 10px;
+                        margin-left: 10px;
+                      }
+                    }
+                  </style>
+                
+                
+                <div class="company-logo-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Start Company Logo Slider -->
+                                <div class="company-logo-slider">
+                                    <!-- Slider main container -->
+                                    <div class="swiper-container">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <!-- Start Company Logo Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="" class="image"><img src="/strane/assets/images/company-logo/net.svg" alt=""></a>
+                                            </div>
+                                            <!-- End Company Logo Single Item -->
+                                            <!-- Start Company Logo Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="" class="image"><img src="/strane/assets/images/company-logo/hotstar-seeklogo 1.svg" alt=""></a>
+                                            </div>
+                                            <!-- End Company Logo Single Item -->
+                                            <!-- Start Company Logo Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="" class="image"><img src="/strane/assets/images/company-logo/earth_travelers_logo 2.png" alt=""></a>
+                                            </div>
+                                            <!-- End Company Logo Single Item -->
+                                            <!-- Start Company Logo Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="" class="image"><img src="/strane/assets/images/company-logo/esp.png" alt=""></a>
+                                            </div>
+                                            <!-- End Company Logo Single Item -->
+                                            <!-- Start Company Logo Single Item -->
+                                            <div class="company-logo-single-item swiper-slide">
+                                                <a href="" class="image"><img src="/strane/assets/images/company-logo/phil.png" alt=""></a>
+                                            </div>
+                                            <!-- End Company Logo Single Item -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Company Logo Slider -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Company Logo Display Section :::... -->
+
+        <!-- ...::: Start Testimonial Display Section :::... -->
+        
+        <!-- ...::: Start Blog Feed Section :::... -->
+        <div class="blog-feed-display-section section-inner-padding-150 section-top-gap-150 blog-feed-dispaly-bg">
+            <div class="box-wrapper">
+                
+                <div class="blgo-feed-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 pos-relative">
+                                <!-- Start Blog Feed Slider -->
+                               
+                                <!-- End Blog Feed Slider -->
+                                <!-- Start Subscribe Banner -->
+                                <div class="subscribe-banner subscribe-banner-overflow section-top-gap-150 section-fluid-100">
+                                    <div class="row justify-content-between align-items-center">
+                                        <div class="col-lg-8 col-xl-8">
+                                            <div class="content">
+                                                <h6 class="big-text">Stay connect with us, get daily & weekly update.</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="contact.html" class="btn btn-lg btn-default icon-right">Subscribe Now <i class="icofont-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Subscribe Banner -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ...::: End Blog Feed Section :::... -->
+
+        <!-- ...::: Start Footer Section :::... -->
+        <footer class="footer-section section-top-gap-0">
+            <div class="box-wrapper">
+                <!-- Start Footer Top -->
+                <div class="footer-top footer-top-style-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-top-box">
+                                    <div class="footer-top-left">
+                                        <!-- Start Footer Single Widget - About -->
+                                        <div class="footer-single-widget footer-about">
+                                            <a href="index.html" class="footer-logo">
+                                                <img src="/strane/assets/images/logo/DARKLogo.png" alt="">
+                                            </a>
+                                            <p>There are many variation popular sheet
+                                                containing available have version software
+                                                like available.</p>
+                                            <address>Your address goes here.</address>
+                                        </div>
+                                        <!-- End Footer Single Widget - About-->
+                                    </div>
+                                    <div class="footer-top-right">
+                                        <!-- Start Footer Single Widget - Footer Menu -->
+                                        <div class="footer-single-widget footer-menu">
+                                            <h5 class="footer-title">Company</h5>
+                                            <ul class="footer-nav">
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                                <li><a href="">Print Ads</a></li>
+                                                <li><a href="faq.html">FAQ’s</a></li>
+                                                <li><a href="">Careers</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Footer Single Widget - Footer Menu-->
+                                        <!-- Start Footer Single Widget - Footer Menu -->
+                                        <div class="footer-single-widget footer-menu">
+                                            <h5 class="footer-title">Quick Links</h5>
+                                            <ul class="footer-nav">
+                                                <li><a href="">Privacy Policy</a></li>
+                                                <li><a href="">Discussion</a></li>
+                                                <li><a href="">Terms & Conditions</a></li>
+                                                <li><a href=""> Customer Support</a></li>
+                                                <li><a href="">Course FAQ’s</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Footer Single Widget - Footer Menu-->
+                                        <!-- Start Footer Single Widget - Footer Menu -->
+                                        <div class="footer-single-widget footer-menu">
+                                            <h5 class="footer-title">Product</h5>
+                                            <ul class="footer-nav">
+                                                <li><a href="">Presentation</a></li>
+                                                <li><a href="">E-Books</a></li>
+                                                <li><a href="">Management Tool</a></li>
+                                                <li><a href="">Dashboard</a></li>
+                                                <li><a href="">Event Organizer</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- End Footer Single Widget - Footer Menu-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Footer Top -->
+
+                <!-- Start Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row justify-content-center justify-content-md-between align-items-center">
+                            <div class="col-auto">
+                                <p class="copytight-text">&copy; 2025 Infai. Made with </i> by <a href="" target="_blank" rel="noopener noreferrer">INFAI SYSTEMS</a></p>
+                            </div>
+
+                            <div class="col-auto">
+                                <ul class="footer-bottom-link">
+                                    <li> <a href="">Terms of Service </a></li>
+                                    <li><a href="">Privacy Policy</a></li>
+                                    <li><a href="">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Footer Bottom -->
+            </div>
+        </footer>
+        <!-- ...::: End Footer Section :::... -->
+
+        <!-- material-scrolltop button -->
+        <button class="material-scrolltop" type="button"></button>
+    </main>
+
+    <!-- ::::::::::::::All JS Files here :::::::::::::: -->
+    <!-- Global Vendor -->
+    <script src="/strane/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="/strane/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/strane/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="/strane/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/strane/assets/js/vendor/jquery-ui.min.js"></script>
+
+    <!--Plugins JS-->
+    <script src="/strane/assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="/strane/assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="/strane/assets/js/plugins/counter.js"></script>
+    <script src="/strane/assets/js/plugins/images-loaded.min.js"></script>
+    <script src="/strane/assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="/strane/assets/js/plugins/ajax-mail.js"></script>
+    <script src="/strane/assets/js/plugins/material-scrolltop.js"></script>
+
+    <!--Main JS (Common Activation Codes)-->
+    <script src="/strane/assets/js/main.js"></script>
+
+</body>
+
+</html>

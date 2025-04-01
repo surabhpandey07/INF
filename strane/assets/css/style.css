@@ -763,7 +763,7 @@ input, textarea {
 .default-text-content p strong {
   font-size: 16px;
   font-weight: 700;
-  color: #101320;
+  color: #ffffff;
 }
 .default-text-content .default-item-list {
   margin-top: 45px;
@@ -773,7 +773,7 @@ input, textarea {
   font-size: 15px;
   font-weight: 700;
   color: #1b5fc7;
-  border: 1px solid #ededed;
+  border: 1px solid #000000;
   border-radius: 10px;
   padding: 12px 30px;
   display: -webkit-box;
@@ -2054,67 +2054,17 @@ input, textarea {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.hero-wrapper .hero-content .title span {
-  color: #ffffff;
-}
-@media (min-width: 576px) {
-  .hero-wrapper .hero-content .title {
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .hero-wrapper .hero-content .title {
-    font-size: 50px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-@media (min-width: 1200px) {
-  .hero-wrapper .hero-content .title {
-    font-size: 48px;
-  }
-}
-@media (min-width: 1400px) {
-  .hero-wrapper .hero-content .title {
-    font-size: 65px;
-  }
-}
-@media (min-width: 1800px) {
-  .hero-wrapper .hero-content .title {
-    font-size: 75px;
-    margin-top: 43px;
-    margin-bottom: 45px;
-  }
-}
+.hero-wrapper .hero-content .title,
+.hero-wrapper .hero-content .title span,
 .hero-wrapper .hero-content p {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.818;
-  color: #3a3e4c;
+  color: white; /* White color for desktop */
 }
-@media (min-width: 1200px) {
+
+@media (max-width: 768px) {
+  .hero-wrapper .hero-content .title,
+  .hero-wrapper .hero-content .title span,
   .hero-wrapper .hero-content p {
-    font-size: 22px;
-  }
-}
-.hero-wrapper .hero-content .btn {
-  margin-top: 36px;
-  font-size: 16px;
-  padding: 15px 30px;
-  border-radius: 36px;
-}
-@media (min-width: 768px) {
-  .hero-wrapper .hero-content .btn {
-    font-size: 18px;
-    padding: 18px 40px;
-  }
-}
-@media (min-width: 1400px) {
-  .hero-wrapper .hero-content .btn {
-    font-size: 18px;
-    padding: 21.5px 55px;
+    color: black; /* Black color for mobile */
   }
 }
 

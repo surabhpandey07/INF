@@ -4624,15 +4624,15 @@ input, textarea {
 * Layout - Mobile Header
 *****************************/
 .mobile-header {
-  position: absolute;
+  position: sticky; /* Makes the header stay at the top */
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
   background: #f5f5f5;
   padding: 0px 0;
-  border: 2px solid rgb(0, 131, 122); /* Black border */
-  border-radius: 5px; /* Rounded corners */
+  border: 2px solid black; /* Black border */
+  border-radius: 0px; /* Rounded corners */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 .mobile-action-link {

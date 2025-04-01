@@ -570,104 +570,202 @@
             </div>
         </div>
         <!-- ...::: End Service Display Section :::... -->
-   ,    
    
-       <style>
-          
-           
-           .sidebar {
-               width: 100%;
-               max-width: 400px;
-               border-radius: 10px;
-               overflow: hidden;
-           }
-           .sidebar ul {
-               list-style: none;
-               padding: 0;
-               margin: 0;
-           }
-           .sidebar li {
-               padding: 15px;
-               border-bottom: 1px solid #ddd;
-               background-color: #f8f8f8;
-               cursor: pointer;
-               text-align: center;
-           }
-           .sidebar li:first-child {
-               background-color: #1f5d46;
-               color: white;
-           }
-           .sidebar li:hover {
-               background-color: #e0e0e0;
-           }
-           .content {
-               text-align: left;
-               margin-top: 20px;
-               max-width: 600px;
-           }
-           .content h2 {
-               margin: 0;
-               font-size: 26px;
-           }
-           
-           .button {
-               display: inline-block;
-               padding: 12px 20px;
-               border: 1px solid black;
-               border-radius: 5px;
-               text-decoration: none;
-               color: black;
-               margin-top: 15px;
-               font-size: 16px;
-           }
-           .button:hover {
-               background-color: black;
-               color: white;
-           }
-           @media (min-width: 768px) {
-               .container {
-                   flex-direction: row;
-                   justify-content: space-between;
-                   align-items: flex-start;
-                   max-width: 1000px;
-               }
-               .sidebar {
-                   width: 40%;
-                   max-width: 300px;
-               }
-               .sidebar li {
-                   text-align: left;
-                   padding-left: 20px;
-               }
-               .content {
-                   text-align: left;
-                   margin-left: 40px;
-                   max-width: 500px;
-                   margin-top: 0;
-               }
-           }
-       </style>
-   </head>
-   <body>
-       <div class="container">
-           <div class="sidebar">
-               <ul>
-                   <li>→ Strategy & Consulting</li>
-                   <li>→ Designing & Imaging</li>
-                   <li>→ Print Media Solutions</li>
-                   <li>→ Tech Solutions</li>
-                   <li>→ Marketing Solutions</li>
-                   <li>→ Data Analytics</li>
-                   <li>→ Financial Operations</li>
-               </ul>
-           </div>
-           <div class="content">
-               <h2>Shape your Business</h2>
-               <p>We're not traditional consultants who leave after providing advice. We integrate deeply with your team, becoming a permanent extension of your business.</p>
-               <a href="#" class="button">Contact Us</a>
-           </div>
-       </div>
+
    
+    
+      
+  
+            <style>
+                
+        
+                .container1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    
+                    background-color: #fff;
+                    padding: 40px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    margin: 20px;
+                }
+        
+                .sidebar1 {
+                    width: 100%;
+                    max-width: 400px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-color: #f8f8f8;
+                    text-align: center;
+                }
+        
+                .sidebar ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+        
+                .sidebar1 li {
+                    padding: 15px;
+                    border-bottom: 1px solid #ddd;
+                    background-color: #f8f8f8;
+                    cursor: pointer;
+                }
+        
+                .sidebar1 li:first-child {
+                    background-color: #1f5d46;
+                    color: white;
+                }
+        
+                .sidebar1 li:hover {
+                    background-color: #e0e0e0;
+                }
+        
+                .content {
+                    text-align: center;
+                    max-width: 600px;
+                }
+        
+                .content h2 {
+                    margin: 0;
+                    font-size: 26px;
+                }
+        
+                
+                .button {
+                    display: inline-block;
+                    padding: 12px 20px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: black;
+                    margin-top: 15px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+        
+                .button:hover {
+                    background-color: black;
+                    color: white;
+                }
+        
+                .dropdown {
+                    display: none;
+                    list-style: none;
+                    padding: 0;
+                    margin-top: 20px;
+                }
+        
+                .dropdown li {
+                    padding: 10px;
+                    background-color: #f8f8f8;
+                    border-bottom: 1px solid #ddd;
+                    text-align: left;
+                }
+        
+                .dropdown li:first-child {
+                    background-color: #1f5d46;
+                    color: white;
+                }
+        
+                /* Desktop View - Sidebar Left, Content Right */
+                @media (min-width: 100%) {
+                    .container {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 1000px;
+                    }
+        
+                    .sidebar {
+                        width: 40%;
+                        max-width: 300px;
+                        text-align: left;
+                    }
+        
+                    .content {
+                        text-align: left;
+                        margin-left: 40px;
+                        max-width: 500px;
+                    }
+                }
+        
+                /* Mobile View - Content First, Sidebar Second */
+                @media (max-width: 767px) {
+                    .container {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+        
+                    .content {
+                        order: 1;
+                        width: 100%;
+                        text-align: center;
+                    }
+        
+                    .sidebar {
+                        order: 2;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            </style>
+       
+            <div class="container1">
+                <!-- Content on the right -->
+                <div class="content1">
+                    <h2>Shape your Business</h2>
+                    <p>We're not traditional consultants who leave after providing advice.<br> We integrate deeply with your team, becoming a permanent extension of your business.</p>
+                    <a href="javascript:void(0);" class="button" id="toggleDropdown">Contact Us</a>
+                    
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown1" id="dropdownMenu1">
+                        <li>→ Strategy & Consulting</li>
+                        <li>→ Designing & Imaging</li>
+                        <li>→ Print Media Solutions</li>
+                        <li>→ Tech Solutions</li>
+                        <li>→ Marketing Solutions</li>
+                        <li>→ Data Analytics</li>
+                        <li>→ Financial Operations</li>
+                    </ul>
+                </div>
+        
+                <!-- Sidebar (Box on the left) -->
+                <div class="sidebar1">
+                    <ul>
+                        <li>→ Strategy & Consulting</li>
+                        <li>→ Designing & Imaging</li>
+                        <li>→ Print Media Solutions</li>
+                        <li>→ Tech Solutions</li>
+                        <li>→ Marketing Solutions</li>
+                        <li>→ Data Analytics</li>
+                        <li>→ Financial Operations</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <script>
+                // Get the button and dropdown elements
+                const toggleButton = document.getElementById('toggleDropdown');
+                const dropdown = document.getElementById('dropdownMenu1');
+        
+                // Add event listener to toggle the dropdown visibility
+                toggleButton.addEventListener('click', function() {
+                    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+                });
+        
+                // Ensure the dropdown is initially hidden
+                dropdown.style.display = 'none';
+            </script>
+        
+        
+
+
+
+
+
    
         <!-- ...::: Start Content Display Section :::... -->
         <div class="content-display-section  section-top-gap-150 section-fluid-200">

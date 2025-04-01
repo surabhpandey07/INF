@@ -572,174 +572,183 @@
         <!-- ...::: End Service Display Section :::... -->
         
    
-      
-            <style>
-               
-                .header {
-                    text-align: left;
-                    margin-bottom: 30px;
-                    width: 100%;
-                }
+       
+
+    <style>
         
-                .header h2 {
-                    margin: 0;
-                    font-size: 32px;
-                    color: #1f5d46;
-                    text-align: left;
-                }
+
+        .header {
+            text-align: left;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 32px;
+            color: #1f5d46;
+            text-align: left;
+        }
+
+        .content {
+            text-align: left;
+            max-width: 600px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
         
-                
-        
-                .button {
-                    display: inline-block;
-                    padding: 12px 20px;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    text-decoration: none;
-                    color: black;
-                    margin-top: 15px;
-                    font-size: 16px;
-                    cursor: pointer;
-                }
-        
-                .button:hover {
-                    background-color: black;
-                    color: white;
-                }
-        
-                .sidebar {
-                    width: 100%;
-                    max-width: 600px;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    background-color: #f8f8f8;
-                    text-align: left;
-                }
-        
-                .sidebar ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                }
-        
-                .sidebar li {
-                    padding: 15px;
-                    border-bottom: 1px solid #ddd;
-                    background-color: #f8f8f8;
-                    cursor: pointer;
-                    text-align: left;
-                }
-        
-                .sidebar li:first-child {
-                    background-color: #1f5d46;
-                    color: white;
-                }
-        
-                .sidebar li:hover {
-                    background-color: #e0e0e0;
-                }
-        
-                .dropdown {
-                    display: none;
-                    list-style: none;
-                    padding: 0;
-                    margin-top: 20px;
-                    width: 100%;
-                }
-        
-                .dropdown li {
-                    padding: 10px;
-                    background-color: #f8f8f8;
-                    border-bottom: 1px solid #ddd;
-                    text-align: left;
-                }
-        
-                .dropdown li:first-child {
-                    background-color: #1f5d46;
-                    color: white;
-                }
-        
-                /* Desktop View - Keep left alignment */
-                @media (min-width: 768px) {
-                    .container {
-                        max-width: 1000px;
-                        align-items: flex-start;
-                    }
-        
-                    .header h2 {
-                        font-size: 36px;
-                    }
-        
-                    .content, .sidebar {
-                        max-width: 600px;
-                    }
-                }
-        
-                /* Mobile View - Smaller elements */
-                @media (max-width: 767px) {
-                    .container {
-                        padding: 20px;
-                    }
-        
-                    .header h2 {
-                        font-size: 28px;
-                    }
-                }
-            </style>
-      
-            <div class="container">
-                <!-- Header at the top -->
-                <div class="header">
-                    <h2>Shape your Business</h2>
-                </div>
-        
-                <!-- Content below header -->
-                <div class="content">
-                    <p>We're not traditional consultants who leave after providing advice. We integrate deeply with your team, becoming a permanent extension of your business.</p>
-                    <a href="javascript:void(0);" class="button" id="toggleDropdown">Contact Us</a>
-                    
-                    <!-- Dropdown Menu -->
-                    <ul class="dropdown" id="dropdownMenu">
-                        <li>→ Strategy & Consulting</li>
-                        <li>→ Designing & Imaging</li>
-                        <li>→ Print Media Solutions</li>
-                        <li>→ Tech Solutions</li>
-                        <li>→ Marketing Solutions</li>
-                        <li>→ Data Analytics</li>
-                        <li>→ Financial Operations</li>
-                    </ul>
-                </div>
-        
-                <!-- Sidebar (Box at the bottom) -->
-                <div class="sidebar">
-                    <ul>
-                        <li>→ Strategy & Consulting</li>
-                        <li>→ Designing & Imaging</li>
-                        <li>→ Print Media Solutions</li>
-                        <li>→ Tech Solutions</li>
-                        <li>→ Marketing Solutions</li>
-                        <li>→ Data Analytics</li>
-                        <li>→ Financial Operations</li>
-                    </ul>
-                </div>
-            </div>
-        
-            <script>
-                // Get the button and dropdown elements
-                const toggleButton = document.getElementById('toggleDropdown');
-                const dropdown = document.getElementById('dropdownMenu');
-        
-                // Add event listener to toggle the dropdown visibility
-                toggleButton.addEventListener('click', function() {
-                    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
-                });
-        
-                // Ensure the dropdown is initially hidden
-                dropdown.style.display = 'none';
-            </script>
-   
-        
-        
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            margin-top: 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .sidebar {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            text-align: left;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f8f8f8;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .sidebar li:first-child {
+            background-color: #1f5d46;
+            color: white;
+        }
+
+        .sidebar li:hover {
+            background-color: #e0e0e0;
+        }
+
+        .dropdown {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .dropdown li {
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .dropdown li:first-child {
+            background-color: #1f5d46;
+            color: white;
+        }
+
+        /* Desktop View - Keep left alignment */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 1000px;
+                align-items: flex-start;
+            }
+
+            .header h2 {
+                font-size: 36px;
+            }
+
+            .content, .sidebar {
+                max-width: 600px;
+            }
+        }
+
+        /* Mobile View - Smaller elements */
+        @media (max-width: 767px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header at the top -->
+        <div class="header">
+            <h2>Shape your Business</h2>
+        </div>
+
+        <!-- Content below header -->
+        <div class="content">
+            <p>We're not traditional consultants who leave after providing advice. We integrate deeply with your team, becoming a permanent extension of your business.</p>
+            <a href="javascript:void(0);" class="button" id="toggleDropdown">Contact Us</a>
+            
+            <!-- Dropdown Menu -->
+            <ul class="dropdown" id="dropdownMenu">
+                <li>→ Strategy & Consulting</li>
+                <li>→ Designing & Imaging</li>
+                <li>→ Print Media Solutions</li>
+                <li>→ Tech Solutions</li>
+                <li>→ Marketing Solutions</li>
+                <li>→ Data Analytics</li>
+                <li>→ Financial Operations</li>
+            </ul>
+        </div>
+
+        <!-- Sidebar (Box at the bottom) -->
+        <div class="sidebar">
+            <ul>
+                <li>→ Strategy & Consulting</li>
+                <li>→ Designing & Imaging</li>
+                <li>→ Print Media Solutions</li>
+                <li>→ Tech Solutions</li>
+                <li>→ Marketing Solutions</li>
+                <li>→ Data Analytics</li>
+                <li>→ Financial Operations</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Get the button and dropdown elements
+        const toggleButton = document.getElementById('toggleDropdown');
+        const dropdown = document.getElementById('dropdownMenu');
+
+        // Add event listener to toggle the dropdown visibility
+        toggleButton.addEventListener('click', function() {
+            dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+        });
+
+        // Ensure the dropdown is initially hidden
+        dropdown.style.display = 'none';
+    </script>
+
+
 
 
 

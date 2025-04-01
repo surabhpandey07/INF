@@ -2716,6 +2716,8 @@ input, textarea {
   background: linear-gradient(180deg, rgba(225, 228, 231, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
+
+
 /***************************************
 * Components - Custom Content Container
 *****************************************/
@@ -2723,6 +2725,7 @@ input, textarea {
   position: relative;
   z-index: 1;
 }
+
 @media (min-width: 992px) {
   .custom-box-wrapper {
     display: -webkit-box;

@@ -248,7 +248,7 @@
                                               
 
 
-                                            <p class="text"><span class="counter"  data-to="100" data-speed="1500"></span>4X</p>
+                                            <p class="text"><span class="counter"  data-to="100" data-speed="1500">4</span>X</p>
                                         </div>
                                         <h6 class="title">Savings in your<br>
                                             operation cost</h6>
@@ -278,7 +278,7 @@
                                               
                                             
                                             
-                                            <p class="text"><span class="counter"></span>3X</p>
+                                            <p class="text"><span class="counter">3</span>X</p>
                                         </div>
                                         <h6 class="title">Efficiency in<BR> delivering outputs</h6>
                                     </li>
@@ -570,35 +570,61 @@
             </div>
         </div>
         <!-- ...::: End Service Display Section :::... -->
-   
-
-   
-    
-      
-  
-            <style>
-                
         
-                .container1 {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+   
+      
+            <style>
+               
+                .header {
+                    text-align: left;
+                    margin-bottom: 30px;
                     width: 100%;
-                    
-                    background-color: #fff;
-                    padding: 40px;
-                    border-radius: 10px;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                    margin: 20px;
                 }
         
-                .sidebar1 {
+                .header h2 {
+                    margin: 0;
+                    font-size: 32px;
+                    color: #1f5d46;
+                    text-align: left;
+                }
+        
+                .content {
+                    text-align: left;
+                    max-width: 600px;
                     width: 100%;
-                    max-width: 400px;
+                    margin-bottom: 30px;
+                }
+        
+                .content p {
+                    color: gray;
+                    font-size: 16px;
+                    text-align: left;
+                }
+        
+                .button {
+                    display: inline-block;
+                    padding: 12px 20px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: black;
+                    margin-top: 15px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+        
+                .button:hover {
+                    background-color: black;
+                    color: white;
+                }
+        
+                .sidebar {
+                    width: 100%;
+                    max-width: 600px;
                     border-radius: 10px;
                     overflow: hidden;
                     background-color: #f8f8f8;
-                    text-align: center;
+                    text-align: left;
                 }
         
                 .sidebar ul {
@@ -607,42 +633,21 @@
                     margin: 0;
                 }
         
-                .sidebar1 li {
+                .sidebar li {
                     padding: 15px;
                     border-bottom: 1px solid #ddd;
                     background-color: #f8f8f8;
                     cursor: pointer;
+                    text-align: left;
                 }
         
-                .sidebar1 li:first-child {
+                .sidebar li:first-child {
                     background-color: #1f5d46;
                     color: white;
                 }
         
-                .sidebar1 li:hover {
+                .sidebar li:hover {
                     background-color: #e0e0e0;
-                }
-        
-                
-        
-                
-                .button {
-    display: inline-block;
-    padding: 12px 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    margin-top: 15px;
-    margin-bottom: 20px; /* Add space below the button */
-    font-size: 16px;
-    cursor: pointer;
-}
-
-        
-                .button:hover {
-                    background-color: black;
-                    color: white;
                 }
         
                 .dropdown {
@@ -650,6 +655,7 @@
                     list-style: none;
                     padding: 0;
                     margin-top: 20px;
+                    width: 100%;
                 }
         
                 .dropdown li {
@@ -664,58 +670,47 @@
                     color: white;
                 }
         
-                /* Desktop View - Sidebar Left, Content Right */
-                @media (min-width: 100%) {
+                /* Desktop View - Keep left alignment */
+                @media (min-width: 768px) {
                     .container {
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
                         max-width: 1000px;
+                        align-items: flex-start;
                     }
         
-                    .sidebar {
-                        width: 40%;
-                        max-width: 300px;
-                        text-align: left;
+                    .header h2 {
+                        font-size: 36px;
                     }
         
-                    .content {
-                        text-align: left;
-                        margin-left: 40px;
-                        max-width: 500px;
+                    .content, .sidebar {
+                        max-width: 600px;
                     }
                 }
         
-                /* Mobile View - Content First, Sidebar Second */
+                /* Mobile View - Smaller elements */
                 @media (max-width: 767px) {
                     .container {
-                        flex-direction: column;
-                        align-items: center;
+                        padding: 20px;
                     }
         
-                    .content {
-                        order: 1;
-                        width: 100%;
-                        text-align: center;
-                    }
-        
-                    .sidebar {
-                        order: 2;
-                        width: 100%;
-                        text-align: center;
+                    .header h2 {
+                        font-size: 28px;
                     }
                 }
             </style>
-       
-            <div class="container1">
-                <!-- Content on the right -->
-                <div class="content1">
+      
+            <div class="container">
+                <!-- Header at the top -->
+                <div class="header">
                     <h2>Shape your Business</h2>
-                    <p>We're not traditional consultants who leave after providing advice.<br> We integrate deeply with your team, becoming a permanent extension of your business.</p>
+                </div>
+        
+                <!-- Content below header -->
+                <div class="content">
+                    <p>We're not traditional consultants who leave after providing advice. We integrate deeply with your team, becoming a permanent extension of your business.</p>
                     <a href="javascript:void(0);" class="button" id="toggleDropdown">Contact Us</a>
                     
                     <!-- Dropdown Menu -->
-                    <ul class="dropdown1" id="dropdownMenu1">
+                    <ul class="dropdown" id="dropdownMenu">
                         <li>→ Strategy & Consulting</li>
                         <li>→ Designing & Imaging</li>
                         <li>→ Print Media Solutions</li>
@@ -726,8 +721,8 @@
                     </ul>
                 </div>
         
-                <!-- Sidebar (Box on the left) -->
-                <div class="sidebar1">
+                <!-- Sidebar (Box at the bottom) -->
+                <div class="sidebar">
                     <ul>
                         <li>→ Strategy & Consulting</li>
                         <li>→ Designing & Imaging</li>
@@ -743,7 +738,7 @@
             <script>
                 // Get the button and dropdown elements
                 const toggleButton = document.getElementById('toggleDropdown');
-                const dropdown = document.getElementById('dropdownMenu1');
+                const dropdown = document.getElementById('dropdownMenu');
         
                 // Add event listener to toggle the dropdown visibility
                 toggleButton.addEventListener('click', function() {
@@ -753,6 +748,7 @@
                 // Ensure the dropdown is initially hidden
                 dropdown.style.display = 'none';
             </script>
+   
         
         
 
@@ -760,6 +756,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
    
         <!-- ...::: Start Content Display Section :::... -->
         <div class="content-display-section  section-top-gap-150 section-fluid-200">

@@ -4635,8 +4635,6 @@ input, textarea {
   border-radius: 5px; /* Rounded corners */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
-
-
 .mobile-action-link {
   font-size: 24px;
 }
